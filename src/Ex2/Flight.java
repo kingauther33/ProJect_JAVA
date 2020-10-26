@@ -10,7 +10,17 @@ public class Flight {
     }
 
     public Flight(int number, String destination) {
-        this.number = number;
+        setNumber(number);
+        this.destination = destination;
+    }
+
+    public void setNumber(int number) {
+        if (number > 0) {
+            this.number = number;
+        } else throw new IllegalArgumentException("You input an negative number!!!");
+    }
+
+    public void setDestination(String destination) {
         this.destination = destination;
     }
 
