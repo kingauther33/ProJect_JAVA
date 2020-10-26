@@ -35,6 +35,7 @@ public class Bank {
     }
 
     public double calculateInterest() {
-        return balance * (rate / 1200);
+        double annualInterest = rate / 10 * 100;
+        return balance * (annualInterest / 1200);
     }
 }

@@ -4,7 +4,7 @@ public class TestBank {
     public static void main(String[] args) {
         Bank b1;
         try {
-            b1 = new Bank(1000, -1);
+            b1 = new Bank(1000, 10);
         } catch (IllegalArgumentException ex) {
             ex.printStackTrace();
             System.out.println("Balance is set to 0, rate is set to 0\n");
